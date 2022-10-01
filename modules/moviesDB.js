@@ -1,3 +1,4 @@
+
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
@@ -94,4 +95,4 @@ module.exports = class MoviesDB {
     deleteMovieById(id) {
         return this.Movie.deleteOne({ _id: id }).exec();
     }
-}
+};
