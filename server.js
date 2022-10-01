@@ -140,12 +140,12 @@ app.delete('/api/movies', (req, res) => {
 
 
 
-app.delete("/api/movies/:id", (req,res) => {
-    db.deleteMovieById(req.params.id)
-        .then(() => { res.status(201).json(`film successfully deleted`);
-        })
-        .catch((err) => { res.status(204).json({message: "error detected"});
-        }); 
-});
+// app.delete("/api/movies/:id", (req,res) => {
+//     db.deleteMovieById(req.params.id)
+//         .then(() => { res.status(201).json(`film successfully deleted`);
+//         })
+//         .catch((err) => { res.status(204).json({message: "error detected"});
+//         }); 
+// });
 
 
